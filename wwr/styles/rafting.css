@@ -2,13 +2,6 @@
 
 
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
-
 :root { 
     --primary-color: #020887
     --secondary-color: #334195
@@ -25,38 +18,27 @@ body {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color)
+
+div.hero {
+    position: relative;
 }
 
-header {
-    padding: 20px;
-    background-color: aqua;
+h1 {
+    position: absolute;
 }
 
-p {
-    padding: 25px;
+article {
+    position: absolute;
+    opacity: 30%;
+    
 }
 
-nav {
-    background-color: aquamarine;
-    font-size: 1.2rem;
-    display: flex;
+article img{
+    float: right;
 }
 
-nav a {
+.hero img {
     display: block;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-backround-color);
+    width: 100%;
+    height: auto;
 }
